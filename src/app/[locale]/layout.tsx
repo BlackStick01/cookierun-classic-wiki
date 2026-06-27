@@ -58,7 +58,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     "@type": "Organization",
     name: messages.site.name,
     url: absoluteUrl(getHomePath(locale)),
-    logo: absoluteUrl("/images/main-capsule.webp"),
+    logo: absoluteUrl("/google-favicon.png"),
     image: absoluteUrl("/images/og-image.png"),
     sameAs: [
       "https://studiokingdom.co.kr/en/cookie-run/",

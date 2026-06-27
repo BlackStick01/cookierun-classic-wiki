@@ -11,7 +11,7 @@ export function SiteHeader({ locale = "en" }: { locale?: string }) {
     <header className="sticky top-0 z-50 border-b border-orange-100 bg-white/92 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-5 px-4 py-3 sm:px-6 lg:px-8">
         <Link href={localizePath("/", locale)} className="flex min-w-0 items-center gap-3">
-          <Image src="/images/main-capsule.webp" alt="CookieRun Classic official CookieRun visual logo" width={92} height={53} className="h-10 w-16 rounded-sm object-cover shadow-lg shadow-orange-100" priority />
+          <Image src="/images/main-capsule.webp" alt="CookieRun Classic official CookieRun visual logo" width={112} height={64} className="h-11 w-20 rounded-sm object-cover shadow-lg shadow-orange-100" priority />
           <div className="hidden min-w-0 sm:block">
             <div className="truncate text-sm font-black uppercase tracking-wide text-[#4a2315]">{messages.site.shortName}</div>
             <div className="hidden text-xs text-slate-500 sm:block">{messages.site.tagline}</div>

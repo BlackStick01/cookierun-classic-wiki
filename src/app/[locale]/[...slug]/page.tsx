@@ -181,7 +181,7 @@ async function ArticlePage({ article, locale }: { article: ContentMeta; locale: 
       name: messages.site.name,
       logo: {
         "@type": "ImageObject",
-        url: absoluteUrl("/images/main-capsule.webp"),
+        url: absoluteUrl("/google-favicon.png"),
       },
     },
   };
