@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-const GA_MEASUREMENT_ID = "G-LJ52C91RPF";
+const GA_MEASUREMENT_ID = "G-MFZPDXSLHH";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://cookierunclassic-wiki.wiki"),
