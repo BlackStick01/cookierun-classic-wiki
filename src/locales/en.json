@@ -167,7 +167,7 @@
           "displayType": "card-list",
           "highlights": [
             { "label": "List", "detail": "Structured Cookie database pages for confirmed global CookieRun Classic Cookies." },
-            { "label": "Skills", "detail": "Cookie abilities, scoring roles, and upgrade value." },
+            { "label": "Skills", "detail": "Cookie skills, scoring roles, and upgrade value." },
             { "label": "Starters", "detail": "Beginner-safe Cookie picks for early runs." },
             { "label": "Tiers", "detail": "Tier pages are organized separately from official announcements." }
           ]

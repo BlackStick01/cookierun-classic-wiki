@@ -3,12 +3,12 @@
     "name": "CookieRun Classic Wiki",
     "shortName": "CookieRun Classic",
     "description": "Fan-made CookieRun Classic Wiki with beginner guides, cookies, pets, treasures, jelly routes, best upgrades, codes tracking, release news, and official media.",
-    "tagline": "Corre, desl?zate, recoge jaleas y crea mejores combos.",
-    "legalNotice": "Esta wiki independiente hecha por fans no est? afiliada con Devsisters ni Studio Kingdom."
+    "tagline": "Corre, deslízate, recoge jaleas y crea mejores combos.",
+    "legalNotice": "Esta wiki independiente hecha por fans no está afiliada con Devsisters ni Studio Kingdom."
   },
   "nav": {
-    "guide": "Gu?a",
-    "codes": "C?digos",
+    "guide": "Guía",
+    "codes": "Códigos",
     "cookies": "Cookies",
     "pets": "Mascotas",
     "treasures": "Tesoros",
@@ -17,12 +17,12 @@
     "media": "Medios"
   },
   "guide": {
-    "overviewTitle": "Gu?as de CookieRun Classic",
-    "overviewDescription": "Gu?a para principiantes, salto y deslizamiento, puntuaci?n, mejoras y preparaci?n de lanzamiento."
+    "overviewTitle": "Guías de CookieRun Classic",
+    "overviewDescription": "Guía para principiantes, salto y deslizamiento, puntuación, mejoras y preparación de lanzamiento."
   },
   "codes": {
-    "overviewTitle": "C?digos de CookieRun Classic",
-    "overviewDescription": "C?digos activos, reglas de cupones, recompensas de preregistro, regalos de lanzamiento y seguimiento oficial."
+    "overviewTitle": "Códigos de CookieRun Classic",
+    "overviewDescription": "Códigos activos, reglas de cupones, recompensas de preregistro, regalos de lanzamiento y seguimiento oficial."
   },
   "cookies": {
     "overviewTitle": "Cookies de CookieRun Classic",
@@ -30,57 +30,57 @@
   },
   "pets": {
     "overviewTitle": "Mascotas de CookieRun Classic",
-    "overviewDescription": "Lista de mascotas, combinaciones, efectos de apoyo y planificaci?n Cookie + Mascota."
+    "overviewDescription": "Lista de mascotas, combinaciones, efectos de apoyo y planificación Cookie + Mascota."
   },
   "treasures": {
     "overviewTitle": "Tesoros de CookieRun Classic",
-    "overviewDescription": "Lista de tesoros, utilidad de puntuaci?n, valor de mejora y futuras listas de niveles."
+    "overviewDescription": "Lista de tesoros, utilidad de puntuación, valor de mejora y futuras listas de niveles."
   },
   "jellies": {
     "overviewTitle": "Jaleas de CookieRun Classic",
-    "overviewDescription": "Recolecci?n de jaleas, bonus time, rutas de puntuaci?n, monedas, obst?culos y rutas b?sicas."
+    "overviewDescription": "Recolección de jaleas, bonus time, rutas de puntuación, monedas, obstáculos y rutas básicas."
   },
   "system": {
     "overviewTitle": "Sistema de CookieRun Classic",
-    "overviewDescription": "Fecha de lanzamiento, preregistro, plataformas m?viles, soporte de cuenta, enlaces de ayuda y ajustes."
+    "overviewDescription": "Fecha de lanzamiento, preregistro, plataformas móviles, soporte de cuenta, enlaces de ayuda y ajustes."
   },
   "media": {
     "overviewTitle": "Medios de CookieRun Classic",
-    "overviewDescription": "Tr?iler oficial, cobertura DevNow, gameplay, rese?as, b?squedas y temas de comunidad."
+    "overviewDescription": "Tráiler oficial, cobertura DevNow, gameplay, reseñas, búsquedas y temas de comunidad."
   },
   "home": {
     "meta": {
-      "title": "CookieRun Classic Wiki - C?digos, Cookies, Gu?a",
-      "description": "Wiki de CookieRun Classic con gu?as para principiantes, cookies, mascotas, tesoros, rutas de jaleas, c?digos, noticias y medios oficiales."
+      "title": "CookieRun Classic Wiki - Códigos, Cookies, Guía",
+      "description": "Wiki de CookieRun Classic con guías para principiantes, cookies, mascotas, tesoros, rutas de jaleas, códigos, noticias y medios oficiales."
     },
     "hero": {
       "eyebrow": "Wiki comunitaria independiente hecha por fans",
       "title": "CookieRun Classic Wiki",
-      "description": "Prep?rate para la aventura cl?sica de CookieRun con gu?as claras de salto, deslizamiento, rutas de jaleas, combinaciones de Cookies y mascotas, tesoros, novedades y c?digos verificados.",
+      "description": "Prepárate para la aventura clásica de CookieRun con guías claras de salto, deslizamiento, rutas de jaleas, combinaciones de Cookies y mascotas, tesoros, novedades y códigos verificados.",
       "stats": [
         "IP oficial de CookieRun",
-        "Acci?n m?vil de carrera",
+        "Acción móvil de carrera",
         "Controles de salto y deslizamiento",
         "Cookies, mascotas y tesoros",
-        "Centro de gu?as fan-made"
+        "Centro de guías fan-made"
       ],
-      "primaryCta": "Empezar gu?a inicial",
+      "primaryCta": "Empezar guía inicial",
       "secondaryCta": "Explorar Cookies",
-      "tertiaryCta": "Ver c?digos activos",
+      "tertiaryCta": "Ver códigos activos",
       "videoLabel": "Medios oficiales"
     },
     "video": {
       "title": "Mira el showcase oficial CookieRun DevNow",
-      "description": "El m?dulo de video usa medios oficiales de CookieRun para mostrar personajes, tono y acci?n cl?sica antes de abrir las gu?as.",
+      "description": "El módulo de video usa medios oficiales de CookieRun para mostrar personajes, tono y acción clásica antes de abrir las guías.",
       "button": "Reproducir video oficial"
     },
     "recent": {
       "eyebrow": "Actualizaciones recientes",
-      "title": "Gu?as nuevas de CookieRun Classic",
-      "description": "Art?culos recientes de seoscout conectados con la navegaci?n y el sitemap."
+      "title": "Guías nuevas de CookieRun Classic",
+      "description": "Artículos recientes de seoscout conectados con la navegación y el sitemap."
     },
     "start": {
-      "eyebrow": "Empieza aqu?",
+      "eyebrow": "Empieza aquí",
       "title": "Tu viaje en CookieRun Classic",
       "cards": [
         {
@@ -106,7 +106,7 @@
       ]
     },
     "trending": {
-      "eyebrow": "P?ginas populares",
+      "eyebrow": "Páginas populares",
       "title": "Tendencias ahora",
       "items": [
         "Beginner Guide",
@@ -116,7 +116,7 @@
       ]
     },
     "aboutGame": {
-      "title": "?Qu? es CookieRun Classic?",
+      "title": "¿Qué es CookieRun Classic?",
       "paragraphs": [
         "CookieRun Classic is the announced global return of the classic CookieRun running-action experience connected to the original CookieRun era. The core appeal is fast mobile running action where Cookies escape the oven, collect Jellies, dodge obstacles, and improve scores through better timing and stronger combinations.",
         "This wiki separates confirmed official information from legacy CookieRun knowledge. Early pages focus on beginner basics, Cookies, Pets, Treasures, Jellies, codes, release news, official media, and practical route notes."
@@ -147,11 +147,11 @@
           "value": "Cookies, Pets, Treasures"
         }
       ],
-      "cta": "Explorar todas las gu?as"
+      "cta": "Explorar todas las guías"
     },
     "explore": {
-      "title": "M?dulos de gu?a de CookieRun Classic",
-      "description": "Explora m?dulos de gu?a para bases, c?digos, Cookies, mascotas, tesoros, puntuaci?n con jaleas, noticias y medios oficiales.",
+      "title": "Módulos de guía de CookieRun Classic",
+      "description": "Explora módulos de guía para bases, códigos, Cookies, mascotas, tesoros, puntuación con jaleas, noticias y medios oficiales.",
       "modules": [
         {
           "order": 1,
@@ -210,7 +210,7 @@
             },
             {
               "label": "Skills",
-              "detail": "Cookie abilities, scoring roles, and upgrade value."
+              "detail": "Cookie skills, scoring roles, and upgrade value."
             },
             {
               "label": "Starters",
@@ -351,16 +351,16 @@
     },
     "faq": [
       {
-        "question": "?Qu? es CookieRun Classic?",
-        "answer": "CookieRun Classic vuelve a la f?rmula cl?sica de correr, saltar, deslizarse, recoger jaleas, evitar obst?culos y mejorar combinaciones."
+        "question": "¿Qué es CookieRun Classic?",
+        "answer": "CookieRun Classic vuelve a la fórmula clásica de correr, saltar, deslizarse, recoger jaleas, evitar obstáculos y mejorar combinaciones."
       },
       {
-        "question": "?Hay c?digos activos?",
-        "answer": "Ahora mismo no hay c?digos oficiales activos confirmados. La wiki separa los c?digos verificados de los rumores."
+        "question": "¿Hay códigos activos?",
+        "answer": "Ahora mismo no hay códigos oficiales activos confirmados. La wiki separa los códigos verificados de los rumores."
       },
       {
-        "question": "?Qu? leo primero?",
-        "answer": "Empieza con la gu?a para principiantes y luego revisa Cookies, mascotas, tesoros y puntuaci?n con jaleas."
+        "question": "¿Qué leo primero?",
+        "answer": "Empieza con la guía para principiantes y luego revisa Cookies, mascotas, tesoros y puntuación con jaleas."
       },
       {
         "question": "?Est? conectado con Devsisters?",
@@ -368,36 +368,36 @@
       }
     ],
     "finalCta": {
-      "title": "?Listo para correr en CookieRun Classic?",
-      "description": "Usa esta wiki para prepararte con gu?as, Cookies, mascotas, tesoros, rutas, c?digos y noticias oficiales.",
-      "primary": "Leer gu?a inicial",
+      "title": "¿Listo para correr en CookieRun Classic?",
+      "description": "Usa esta wiki para prepararte con guías, Cookies, mascotas, tesoros, rutas, códigos y noticias oficiales.",
+      "primary": "Leer guía inicial",
       "secondary": "Visitar CookieRun oficial"
     }
   },
   "footer": {
     "aboutTitle": "CookieRun Classic Wiki",
-    "about": "CookieRun Classic Wiki es un centro independiente de gu?as fan-made para jugadores que siguen el regreso de la experiencia cl?sica de carrera de CookieRun.",
+    "about": "CookieRun Classic Wiki es un centro independiente de guías fan-made para jugadores que siguen el regreso de la experiencia clásica de carrera de CookieRun.",
     "description": "Fan-made CookieRun Classic guide site for codes, cookies, pets, treasures, beginner tips, release news, and official media.",
     "playGame": "Visitar CookieRun oficial",
     "officialDiscord": "Official Discord",
     "officialYoutube": "YouTube oficial",
     "communityTool": "CookieRun Classic Tracker",
-    "privacyPolicy": "Pol?tica de privacidad",
-    "termsOfService": "T?rminos de servicio"
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio"
   },
   "shared": {
-    "wikiNavigation": "Navegaci?n Wiki",
-    "activeCodes": "C?digos activos",
-    "viewAllCodes": "Ver todos los c?digos",
+    "wikiNavigation": "Navegación Wiki",
+    "activeCodes": "Códigos activos",
+    "viewAllCodes": "Ver todos los códigos",
     "home": "Inicio",
-    "readMore": "Leer m?s",
-    "latestArticles": "?ltimos art?culos",
-    "allArticles": "Todos los art?culos"
+    "readMore": "Leer más",
+    "latestArticles": "Últimos artículos",
+    "allArticles": "Todos los artículos"
   },
   "sidebarCodes": [
     {
       "code": "Ninguno",
-      "reward": "No hay c?digo oficial activo confirmado"
+      "reward": "No hay código oficial activo confirmado"
     },
     {
       "code": "Ninguno",
@@ -405,8 +405,8 @@
     }
   ],
   "metadata": {
-    "title": "CookieRun Classic Wiki - C?digos, Cookies, Gu?a",
-    "description": "Wiki de CookieRun Classic con gu?as, cookies, mascotas, tesoros, rutas de jaleas, c?digos, noticias y medios oficiales.",
-    "keywords": "CookieRun Classic, c?digos, gu?a, cookies, mascotas, tesoros, lanzamiento"
+    "title": "CookieRun Classic Wiki - Códigos, Cookies, Guía",
+    "description": "Wiki de CookieRun Classic con guías, cookies, mascotas, tesoros, rutas de jaleas, códigos, noticias y medios oficiales.",
+    "keywords": "CookieRun Classic, códigos, guía, cookies, mascotas, tesoros, lanzamiento"
   }
 }

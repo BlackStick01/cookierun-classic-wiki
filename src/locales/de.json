@@ -210,7 +210,7 @@
             },
             {
               "label": "Skills",
-              "detail": "Cookie abilities, scoring roles, and upgrade value."
+              "detail": "Cookie skills, scoring roles, and upgrade value."
             },
             {
               "label": "Starters",
@@ -356,7 +356,7 @@
       },
       {
         "question": "Gibt es aktive Codes?",
-        "answer": "Derzeit ist kein offizieller aktiver Code best?tigt. Die Wiki trennt gepr?fte Codes von Ger?chten."
+        "answer": "Derzeit ist kein offizieller aktiver Code bestátigt. Die Wiki trennt gepr?fte Codes von Ger?chten."
       },
       {
         "question": "Was sollte ich zuerst lesen?",
@@ -397,7 +397,7 @@
   "sidebarCodes": [
     {
       "code": "Keine",
-      "reward": "Kein offizieller aktiver Code best?tigt"
+      "reward": "Kein offizieller aktiver Code bestátigt"
     },
     {
       "code": "Keine",

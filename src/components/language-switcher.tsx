@@ -6,10 +6,10 @@ import { Globe2 } from "lucide-react";
 
 const languages = [
   { locale: "en", label: "English" },
-  { locale: "es", label: "Espanol" },
+  { locale: "es", label: "Español" },
   { locale: "de", label: "Deutsch" },
-  { locale: "fr", label: "Francais" },
-  { locale: "pt", label: "Portugues" },
+  { locale: "fr", label: "Français" },
+  { locale: "pt", label: "Português" },
 ];
 
 function stripLocale(pathname: string) {
