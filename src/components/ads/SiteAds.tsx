@@ -7,6 +7,9 @@ import { DismissibleStickyBanner } from "./DismissibleStickyBanner";
 
 export function SiteAds() {
   const pathname = usePathname();
+
+  if (!adsConfig.enabled) return null;
+
   const hidden = adsConfig.excludedPathSegments.some((segment) =>
     pathname.split("/").filter(Boolean).includes(segment),
   );

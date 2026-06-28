@@ -1,5 +1,5 @@
 export const adsConfig = {
-  enabled: true,
+  enabled: false,
 
   slots: {
     sticky320x50: {

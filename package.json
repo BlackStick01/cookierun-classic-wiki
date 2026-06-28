@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "sync:ads": "node scripts/sync-ads-config.mjs",
+    "predev": "npm run sync:ads",
     "dev": "next dev",
+    "prebuild": "npm run sync:ads",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
