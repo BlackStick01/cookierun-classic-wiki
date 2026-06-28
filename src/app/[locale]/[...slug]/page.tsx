@@ -20,7 +20,7 @@ import {
   isSupportedLocale,
   type ContentMeta,
 } from "@/lib/content";
-import messages from "@/locales/en.json";
+import { getSiteMessages, type SiteMessages } from "@/lib/site-messages";
 import { absoluteUrl, titleCaseSlug } from "@/lib/utils";
 
 type Props = {
@@ -37,6 +37,20 @@ function findArticleInCategory(category: string, slug: string) {
   return getContentByCategory(category).find(
     (item) => item.slug === slug || getPublicSlug(item) === slug,
   );
+}
+
+function getCategoryDisplay(category: string, messages: SiteMessages) {
+  const key = category as keyof SiteMessages["nav"];
+  const overview = messages[key as keyof SiteMessages];
+  const categoryMeta = getCategoryMeta(category);
+
+  return {
+    label: messages.nav[key] || categoryMeta?.label || titleCaseSlug(category),
+    description:
+      typeof overview === "object" && overview && "overviewDescription" in overview
+        ? String(overview.overviewDescription)
+        : categoryMeta?.description || "",
+  };
 }
 
 function resolveSlug(slug: string[]) {
@@ -60,12 +74,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const resolved = resolveSlug(slug);
   const safeLocale = isSupportedLocale(locale) ? locale : DEFAULT_LOCALE;
+  const messages = getSiteMessages(safeLocale);
 
   if (!resolved) return {};
 
   if (resolved.type === "category") {
-    const categoryMeta = getCategoryMeta(resolved.category);
-    if (!categoryMeta) return {};
+    if (!getCategoryMeta(resolved.category)) return {};
+    const categoryMeta = getCategoryDisplay(resolved.category, messages);
     const canonical = getCategoryPath(resolved.category, safeLocale);
     return {
       title: `${categoryMeta.label} - CookieRun Classic Wiki`,
@@ -103,14 +118,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 function CategoryPage({ category, locale }: { category: string; locale: string }) {
+  const messages = getSiteMessages(locale);
   const categoryMeta = getCategoryMeta(category);
+  const categoryDisplay = getCategoryDisplay(category, messages);
   const articles = getContentByCategory(category, locale);
   if (!categoryMeta) notFound();
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `${categoryMeta.label} articles`,
+    name: `${categoryDisplay.label} articles`,
     itemListElement: articles.map((article, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -126,8 +143,8 @@ function CategoryPage({ category, locale }: { category: string; locale: string }
         <section>
           <div className="rounded-lg border border-orange-100 bg-white p-6 shadow-xl shadow-orange-100/70">
             <p className="text-sm font-black uppercase tracking-[0.2em] text-teal-700">{messages.site.shortName}</p>
-            <h1 className="mt-4 text-4xl font-black text-[#4a2315]">{categoryMeta.label}</h1>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">{categoryMeta.description}</p>
+            <h1 className="mt-4 text-4xl font-black text-[#4a2315]">{categoryDisplay.label}</h1>
+            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">{categoryDisplay.description}</p>
           </div>
           <div className="mt-6 grid gap-4">
             {articles.map((article) => (
@@ -150,11 +167,12 @@ function CategoryPage({ category, locale }: { category: string; locale: string }
 }
 
 async function ArticlePage({ article, locale }: { article: ContentMeta; locale: string }) {
+  const messages = getSiteMessages(locale);
   const meta = getContentMeta(article.category, article.slug, locale);
   const mod = await getContentModule(article.category, article.slug, locale);
   if (!meta || !mod) notFound();
   const Content = mod.default;
-  const categoryLabel = getCategoryMeta(article.category)?.label || titleCaseSlug(article.category);
+  const categoryLabel = getCategoryDisplay(article.category, messages).label;
   const canonicalPath = getArticlePath(meta, locale);
   const categoryPath = getCategoryPath(article.category, locale);
 

@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { BookOpen, Cookie, Shield, Sparkles } from "lucide-react";
 import { NAVIGATION_CONFIG } from "@/config/navigation";
-import messages from "@/locales/en.json";
 import { getArticlePath, getLatestContent, localizePath } from "@/lib/content";
+import { getSiteMessages } from "@/lib/site-messages";
 import { LanguageSwitcher } from "./language-switcher";
 
 export function SiteHeader({ locale = "en" }: { locale?: string }) {
+  const messages = getSiteMessages(locale);
+
   return (
     <header className="sticky top-0 z-50 border-b border-orange-100 bg-white/92 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-5 px-4 py-3 sm:px-6 lg:px-8">
@@ -36,6 +38,8 @@ export function SiteHeader({ locale = "en" }: { locale?: string }) {
 }
 
 export function SiteFooter({ locale = "en" }: { locale?: string }) {
+  const messages = getSiteMessages(locale);
+
   return (
     <footer className="border-t border-orange-100 bg-white">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
@@ -67,6 +71,7 @@ export function SiteFooter({ locale = "en" }: { locale?: string }) {
 }
 
 export function WikiSidebar({ locale = "en" }: { locale?: string }) {
+  const messages = getSiteMessages(locale);
   const latest = getLatestContent(6, locale);
   return (
     <aside className="space-y-5">

@@ -6,9 +6,9 @@ import { hasLocale } from "next-intl";
 import { SiteAds } from "@/components/ads/SiteAds";
 import { SiteFooter, SiteHeader } from "@/components/site";
 import { routing } from "@/i18n/routing";
-import messages from "@/locales/en.json";
 import { absoluteUrl } from "@/lib/utils";
 import { SUPPORTED_LOCALES, getHomePath, isSupportedLocale } from "@/lib/content";
+import { getSiteMessages } from "@/lib/site-messages";
 
 type Props = {
   children: React.ReactNode;
@@ -18,6 +18,7 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const safeLocale = isSupportedLocale(locale) ? locale : "en";
+  const messages = getSiteMessages(safeLocale);
   const canonical = getHomePath(safeLocale);
 
   return {
@@ -51,6 +52,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   const safeLocale = isSupportedLocale(locale) ? locale : "en";
+  const messages = getSiteMessages(safeLocale);
   const intlMessages = await getMessages();
 
   const organizationJsonLd = {

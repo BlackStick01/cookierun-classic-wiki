@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import {
   ArrowRight,
   BadgeCheck,
@@ -16,19 +15,13 @@ import {
 } from "lucide-react";
 import { ResponsiveLeaderboardAd } from "@/components/ads/ResponsiveLeaderboardAd";
 import { NAVIGATION_CONFIG } from "@/config/navigation";
-import generatedContent from "@/lib/generated-content.json";
-import messages from "@/locales/en.json";
+import type { ContentMeta } from "@/lib/content";
+import type { SiteMessages } from "@/lib/site-messages";
 import { cn } from "@/lib/utils";
 
-type HomeModule = (typeof messages.home.explore.modules)[number];
-type ContentMeta = (typeof generatedContent)[number];
+type HomeModule = SiteMessages["home"]["explore"]["modules"][number];
 
 const iconByIndex = [Gift, BookOpen, Cookie, Sparkles, Candy, BadgeCheck, CirclePlay, Star];
-
-function getLocalePrefix(pathname: string) {
-  const locale = pathname.split("/").filter(Boolean)[0];
-  return ["es", "de", "fr", "pt"].includes(locale) ? `/${locale}` : "";
-}
 
 function articleHref(item: Pick<ContentMeta, "category" | "slug">, prefix: string) {
   const publicSlug = item.slug.replace(/^cookierun-classic-/, "");
@@ -78,12 +71,19 @@ function ModuleHighlights({ module }: { module: HomeModule }) {
   );
 }
 
-export default function HomePageClient() {
-  const pathname = usePathname();
-  const prefix = getLocalePrefix(pathname);
+export default function HomePageClient({
+  locale,
+  messages,
+  content,
+}: {
+  locale: string;
+  messages: SiteMessages;
+  content: ContentMeta[];
+}) {
+  const prefix = locale === "en" ? "" : `/${locale}`;
   const href = (path: string) => `${prefix}${path}`;
-  const latest = [...generatedContent].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 8);
-  const trending = generatedContent.filter((item) =>
+  const latest = [...content].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 8);
+  const trending = content.filter((item) =>
     [
       "cookierun-classic-beginner-guide",
       "cookierun-classic-codes",
