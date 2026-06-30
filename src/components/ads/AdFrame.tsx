@@ -25,7 +25,6 @@ export function AdFrame({
       height={height}
       scrolling="no"
       loading={loading}
-      sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-top-navigation-by-user-activation"
       className={className}
       style={{
         width,
