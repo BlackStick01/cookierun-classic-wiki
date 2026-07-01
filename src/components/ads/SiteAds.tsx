@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import { adsConfig } from "@/config/ads";
 import { DesktopSideAds } from "./DesktopSideAds";
-import { DismissibleStickyBanner } from "./DismissibleStickyBanner";
+import { DismissibleTopBanner } from "./DismissibleTopBanner";
 
 export function SiteAds() {
   const pathname = usePathname();
@@ -18,7 +18,7 @@ export function SiteAds() {
 
   return (
     <>
-      <DismissibleStickyBanner />
+      <DismissibleTopBanner />
       <DesktopSideAds />
     </>
   );
